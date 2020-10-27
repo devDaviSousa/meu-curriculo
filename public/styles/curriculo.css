@@ -1,0 +1,274 @@
+#page-landing {
+  background: #92c7e6;
+}
+
+#page-landing #container {
+  color: #8257e5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+#container header img {
+  margin-right: 1.5rem;
+}
+#container header h3 {
+  text-transform: uppercase;
+  color: #8257e5;
+}
+
+#container header img {
+  width: 4.5rem;
+}
+
+#container header .contato img {
+  width: 5.5rem;
+}
+#container header .contato a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+main {
+  height: 80vh;
+  margin: 0 auto;
+}
+.tab-links {
+  margin-bottom: 3.2rem;
+}
+
+button {
+  color: #000000;
+
+  border: none;
+  background: transparent;
+
+  text-transform: uppercase;
+  font-size: 2rem;
+
+  padding: 1.6rem;
+
+  outline: none;
+
+  position: relative;
+}
+
+button::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0.2rem;
+  width: 0%;
+
+  background-color: #8257e5;
+
+  transition: 0.4s;
+}
+button.active {
+  font-weight: bold;
+}
+button:hover::after,
+button.active::after {
+  width: 100%;
+}
+
+.tab-content > section {
+  animation: up 1s;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#container main #experiencia .card-xp {
+  background: #fff;
+  width: 45rem;
+  height: 15rem;
+  margin-bottom: 3.7rem;
+  padding: 2.9rem;
+  border-radius: 1.2rem;
+}
+#container main #experiencia .dados-empre {
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+#container main #experiencia h2 {
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+#container main #experiencia p {
+  color: #000000;
+}
+
+#container main #educacao .card-xp {
+  background: #fff;
+  width: 45rem;
+  height: 15rem;
+  margin-bottom: 3.7rem;
+  padding: 2.9rem;
+  border-radius: 1.2rem;
+}
+#container main #educacao h2 {
+  color: #000000;
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+#container main #educacao p {
+  color: #000000;
+}
+#container main #habilidade {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#container main #habilidade .card-xp {
+  background: #fff;
+  width: 22rem;
+  height: 23rem;
+  margin-bottom: 3.7rem;
+  padding: 2.9rem;
+  border-radius: 1.2rem;
+}
+
+#container main #habilidade h2 {
+  color: #000000;
+  margin-top: 1.2rem;
+
+  margin-bottom: 1.9rem;
+}
+#container main #habilidade p {
+  color: #000000;
+}
+
+@media (min-width: 1100px) {
+  #container {
+    background: #fff;
+    display: flex;
+    width: 90vw;
+    max-width: 1100px;
+    height: 100vh;
+    padding: 40px;
+  }
+
+  #container main h2 {
+    font-size: 48px;
+    margin: 0px 0 8px 0;
+  }
+  #container main p {
+    color: black;
+    font-size: 36px;
+    width: 421px;
+  }
+
+  #container main .profile-sobre {
+    padding-top: 0;
+  }
+  #tabs {
+    width: 1000px;
+    text-align: center;
+  }
+
+  #tabs .tab-links {
+    width: 100%;
+  }
+  #tabs .tab-links button {
+    font-size: 45px;
+  }
+  button::after {
+    height: 6px;
+  }
+  .tab-content {
+    margin-top: 60px;
+  }
+  .tab-content section {
+    width: 100px;
+  }
+  #container main #experiencia .card-xp {
+    background: #fff;
+    width: 446px;
+    height: 172px;
+    margin-bottom: 3.7rem;
+    padding: 2.9rem;
+    border-radius: 1.2rem;
+    border: #8257e5 2px solid;
+  }
+  #experiencia {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  #experiencia .card-xp h2 {
+    font-size: 28px;
+  }
+  #experiencia .card-xp p {
+    font-size: 24px;
+  }
+
+  #experiencia .dados-empre p {
+    font-size: 24px;
+  }
+
+  #educacao {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  #container main #educacao .card-xp {
+    background: #fff;
+    width: 446px;
+    height: 172px;
+    margin-bottom: 3.7rem;
+    padding: 2.9rem;
+    border-radius: 1.2rem;
+    border: #8257e5 2px solid;
+  }
+  #container main #educacao .card-xp p {
+    font-size: 24px;
+  }
+  #container main #educacao .card-xp h2 {
+    font-size: 28px;
+  }
+  #container main #habilidade {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #container main #habilidade .card-xp {
+    margin: 0 auto;
+    width: 343px;
+    height: 260px;
+    border: #8257e5 solid 2px;
+  }
+  #container main #habilidade .card-xp p {
+    text-align: center;
+  }
+}

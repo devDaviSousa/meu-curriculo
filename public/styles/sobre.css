@@ -1,0 +1,106 @@
+#page-landing {
+  background: #92c7e6;
+}
+
+#page-landing #container {
+  color: #8257e5;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+#container header h3 {
+  text-transform: uppercase;
+  color: #8257e5;
+}
+#container header img {
+  width: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+#container header .contato img {
+  width: 5.5rem;
+}
+#container header .contato a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#container main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.2rem;
+  background: #fff;
+  height: 80vh;
+}
+
+#container main h2 {
+  margin-top: 1.7rem;
+  margin-bottom: 1.2rem;
+  font-size: 3.7rem;
+  font-weight: bold;
+}
+
+#container main p {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 5rem;
+  color: black;
+  width: 90%;
+}
+
+#container .button-sobre {
+  width: 27.5rem;
+  height: 6.7rem;
+  border-radius: 3.2rem;
+  text-align: center;
+  background: #8257e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container .button-sobre:hover {
+  background: #92c7e6;
+  transition: 0.4s;
+}
+#container .button-sobre a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 1100px) {
+  #container {
+    background: #fff;
+    display: flex;
+    width: 90vw;
+    max-width: 1100px;
+    height: 100vh;
+    padding: 40px;
+  }
+  #container main h2 {
+    font-size: 48px;
+    margin: 0px 0 8px 0;
+  }
+  #container main p {
+    color: black;
+    font-size: 36px;
+    width: 621px;
+  }
+  #container .button-sobre {
+    margin-top: 20px;
+  }
+  #container main .profile-sobre {
+    padding-top: 0;
+  }
+}

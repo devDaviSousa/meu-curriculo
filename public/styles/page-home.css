@@ -1,0 +1,72 @@
+#page-landing {
+  background: #92c7e6;
+}
+
+#container {
+  color: #8257e5;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.logo-container h1 {
+  font-size: 6rem;
+}
+.logo-container p {
+  color: #000000;
+  font-size: 3rem;
+}
+.logo-container span {
+  font-size: 5rem;
+  text-decoration: none;
+  color: #8257e5;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 9.5rem;
+}
+
+.button-container a {
+  height: 10.4rem;
+  font-size: 4.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+@media (min-width: 1100px) {
+  #container {
+    background: #fff;
+    display: flex;
+    width: 90vw;
+    max-width: 1100px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #container .image-container {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+  }
+  #container .button-container {
+    position: absolute;
+    left: 600px;
+    bottom: 300px;
+  }
+}
